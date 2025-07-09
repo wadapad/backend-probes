@@ -77,7 +77,7 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /api/liveness
-    port: 80
+    port: 8080
   initialDelaySeconds: 15
   periodSeconds: 5
   failureThreshold: 3
@@ -85,7 +85,7 @@ livenessProbe:
 readinessProbe:
   httpGet:
     path: /api/readiness
-    port: 80
+    port: 8080
   initialDelaySeconds: 15
   periodSeconds: 5
   failureThreshold: 3
